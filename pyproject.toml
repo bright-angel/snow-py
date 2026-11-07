@@ -24,8 +24,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/bright-angel/snow"
-Source = "https://github.com/bright-angel/snow"
+Homepage = "https://github.com/bright-angel/snow-py"
+Source = "https://github.com/bright-angel/snow-py"
 
 [project.scripts]
 snow = "snow.cli:main"
