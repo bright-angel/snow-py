@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "snow-stego"
+name = "snow-py"
 version = "20130616"
 description = "Steganography in whitespace - a Python port of SNOW."
 readme = "README.md"
