@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snow-stego"
+version = "20130616"
+description = "Steganography in whitespace - a Python port of SNOW."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Matthew Kwan", email = "mkwan@darkside.com.au" },
+]
+keywords = ["steganography", "stego", "whitespace", "cryptography", "snow"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Text Processing",
+]
+
+[project.urls]
+Homepage = "https://github.com/bright-angel/snow"
+Source = "https://github.com/bright-angel/snow"
+
+[project.scripts]
+snow = "snow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

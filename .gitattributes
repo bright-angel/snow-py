@@ -1,0 +1,3 @@
+# SNOW hides data in trailing whitespace; any line-ending translation would
+# corrupt the encoded bits, so treat the test fixtures as binary.
+tests/data/* binary
